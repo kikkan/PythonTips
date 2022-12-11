@@ -62,21 +62,21 @@ def argsKwargsMatch(*args, **kwargs):
     global i
     print(f'\nrun {i}')
     i+=1
-    match (args, kwargs):
-        # case ((), {}):
-        #     print('neither args nor kwargs')
+    match args, kwargs:
+        case (), {}:  # {'speed':s. 'location':l}
+            print('neither args nor kwargs: args, kwargs = {}, {}'.format(args, kwargs))
         # case ((), k):
         #     print(f'no args, only kwargs: {k}')
         # case (a, {}):
         #     print(f'No kwargs, only args: {a}')
         # case (a, {**k}):
         #     print(f'both args and kwargs: {a}, {k}')
-        case ((), k):
-            print('kwargs', k)
-        case (a, {}):
-            print('args', a)
+        case (), k:
+            print('kwargs: args, kwargs = {}, {}'.format(args, kwargs))
+        case a, {}:
+            print('args: args, kwargs = {}, {}'.format(args, kwargs))
         case a, k:
-            print('args, kwargs', a, k)
+            print('args, kwargs: args, kwargs = {}, {}'.format(args, kwargs))
 
         case debug:
             print(debug)
@@ -88,7 +88,7 @@ d2 = {  # unpack for kwargs
 }
 args = ['stuff', 123, 'more']
 
-# argsKwargsMatch()
-# argsKwargsMatch(**d2)
-# argsKwargsMatch('stuff', 123, 'more', 'no Kwargs tho.')
+argsKwargsMatch()
+argsKwargsMatch(**d2)
+argsKwargsMatch('stuff', 123, 'more', 'no Kwargs tho.')
 argsKwargsMatch('stuff', 123, 'more', **d2)
