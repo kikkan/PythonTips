@@ -1,0 +1,7 @@
+Tech with tim is the dude!
+https://www.youtube.com/watch?v=UZX5kH72Yx4&list=WL&index=25&t=200s&ab_channel=TechWithTim
+
+i console
+    pyinstaller --onefile "filename"
+
+Stikk på yt å se på han Tim for litt mer info. <3
