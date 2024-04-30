@@ -1,0 +1,1 @@
+Script to find the stat and effect formula in GoW2018

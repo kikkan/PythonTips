@@ -1,0 +1,1 @@
+Folder of .py files where I investigate the updated stuff since Python 3.10. Therefore it also includes updates from 3.10 -> 3.11.

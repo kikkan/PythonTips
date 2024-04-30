@@ -1,0 +1,1 @@
+Directory with scripts that solve games. Dirname quite self-explanatory.
